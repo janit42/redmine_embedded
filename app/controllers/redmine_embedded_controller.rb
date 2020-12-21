@@ -45,7 +45,7 @@ class RedmineEmbeddedController < ApplicationController
     # Check file extension
     raise RedmineEmbeddedControllerError.new('This file can not be viewed (invalid extension).') unless Redmine::Plugins::RedmineEmbedded.valid_extension?(path)
     
-    if Redmine::MimeType.is_type?('image', path)
+    if !Redmine::MimeType.is_type?('text', path)
       send_file path, :disposition => 'inline', :type => Redmine::MimeType.of(path)
     else
       embed_file path
