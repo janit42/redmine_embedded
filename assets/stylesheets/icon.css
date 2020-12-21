@@ -1,0 +1,39 @@
+@import "doxygen_icon.css";
+@import "tabs_icon.css";
+
+
+/* Anpassungen */
+
+#content .tabs ul li a {
+    background-color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0px 20px;
+    border-style: none;
+    color: #283A5D;
+}
+
+#content .tabs ul li {
+    background: inherit;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+#content .tabs ul {
+    border-buttom: none;
+    padding-left: 0px;
+    position: inherit;
+}
+
+#content .tabs {
+    height: 36px;
+    margin-bottom: 0px;
+}
+
+#content .tablist a:hover {
+    color: #fff;
+}
+
+#content .tablist li.current a {
+    color: #fff;
+}
